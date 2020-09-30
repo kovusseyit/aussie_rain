@@ -1,5 +1,5 @@
-# Aussie-Rain
-Rain prediction using a dataset from Kaggle
+# Aussie Rain
+Rain prediction in Australia using a dataset from Kaggle
 
 
 # Source & Acknowledgements
