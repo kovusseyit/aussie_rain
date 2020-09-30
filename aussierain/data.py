@@ -1,7 +1,8 @@
 import pandas as pd
 
 def get_weather_data(filename='weatherAUS.csv', 
-                     location='C:/Users/kovus/Documents/Projects/Aussie-Rain/data/weatherAUS.csv'):
+                     location='C:/Users/kovus/Documents/Projects/aussie_rain/aussierain/weatherAUS.csv'
+                    ):
     """Get the Australian weather data and drop RISK_MM column to prevent data leakage
     Parameters
     ----------
@@ -13,10 +14,10 @@ def get_weather_data(filename='weatherAUS.csv',
     Returns
     -------
     data: pandas.DataFrame
-        Fremont bridge data
+        Australian weather data
     """
     # read in the data from local folder
-    data = pd.read_csv('C:/Users/kovus/Documents/Projects/Aussie-Rain/data/weatherAUS.csv', index_col='Date')
+    data = pd.read_csv(location, index_col='Date')
     
     # drop RISK_MM to prevent data leakage
     # convert Date column to datetime format and use as index
